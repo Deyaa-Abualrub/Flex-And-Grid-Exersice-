@@ -8,52 +8,52 @@
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 40px repeat(5,auto) 40px;
   grid-template-areas:
-    "nav nav nav nav nav nav nav   "
-    "a a a c c c c"
-    "a a a c c c c"
-    "b b b c c c c"
-    "b b b d d d d"
-    "e e e e e f f"
+    "sec1 sec1 sec1 sec1 sec1 sec1 sec1"
+    "sec2 sec2 sec2 main main main main"
+    "sec2 sec2 sec2 main main main main"
+    "sec3 sec3 sec3 main main main main"
+    "sec3 sec3 sec3 ex ex ex ex"
+    "rel rel rel rel rel post post"
     "foot foot foot foot foot foot foot";
   color: white;
   text-align: center;
 }
-nav {
+.sec1 {
   padding: 10px;
-  grid-area: nav;
+  grid-area: sec1;
   background-color: rgb(167, 255, 16);
 }
 .Section-2 {
   padding: 10px;
-  grid-area: a;
+  grid-area: sec2;
   background-color: rgb(192, 152, 229);
 }
 .Section-3 {
   padding: 10px;
-  grid-area: b;
+  grid-area:sec3;
   background-color: green;
 }
 .Main-content {
   padding: 10px;
-  grid-area: c;
+  grid-area: main;
   background-color: rgb(138, 103, 38);
 }
 .Extra-content {
   padding: 10px;
-  grid-area: d;
+  grid-area: ex;
   background-color: rgb(136, 155, 144);
 }
 .Related-Images {
   padding: 10px;
   background-color: rgb(94, 94, 240);
-  grid-area: e;
+  grid-area: rel;
 }
 .Related-Post {
   padding: 10px;
   background-color: brown;
-  grid-area: f;
+  grid-area: post;
 }
 footer {
   padding: 10px;
